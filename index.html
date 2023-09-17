@@ -2,26 +2,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario Placa de Video</title>
+    <title>Meu wifi</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
-    <button id="cadastre" onclick="aparecerCadastro()">Cadastre</button>
-    <div id="pop-cadastro-null">
-        <h2>&nbsp;&nbsp;Cadastre a placa de vídeo<p onclick="desaparecerCadastro()" id="fechar-cadastro"><link rel="stylesheet" href="">x</p></h2>
-        <label for="nome">&nbsp;&nbsp;Nome: </label><input type="text" name="" id="nome"> <br><br>
-        <label for="marca">&nbsp;&nbsp;Marca: </label>
-        <select name="" id="marca">
-            <option value=""></option>
-            <option value="nvidia">Nvidea</option>
-            <option value="amd">Amd</option>
-            <option value="intel">Intel</option>
-        </select> <br><br>
-        <select name="" id="modelo">
-            
-        </select>
+    <div id="popup">
+        <h1>Meu Wi-fi</h1>
+        <h2>Nome da rede:</h2>
+        <input type="text" name="" id="SSID" value="Myklan" readonly>
+        <h2>Senha:</h2>
+        <input type="text" name="" id="password" value="mi@lan.net" readonly>
+        <button onclick="copiar()"><ion-icon name="albums"></ion-icon><h3 id="texto-copiar" class="">Copiar</h3></button>
     </div>
-    
+    <div id="toast-off"></div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
